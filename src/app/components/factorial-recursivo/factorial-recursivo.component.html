@@ -1,0 +1,9 @@
+<form>
+    <label for="num">Introduce un número:</label>
+    <input type="number" id="num" name="num" [(ngModel)]="num">
+    <br>
+    <p *ngIf="resultado>0">Factorial de {{ num }} es {{resultado}}</p>
+    <br><br>
+    <button (click)="calcularFactorial()">Calcular factorial</button>
+</form>
+  
